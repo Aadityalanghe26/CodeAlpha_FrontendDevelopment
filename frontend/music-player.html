@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="music-player.css">
+</head>
+<body>
+    <div class="music-player-container">
+        <div class="music-player">
+            <h1>Music Player</h1>
+            
+            <!-- Album Art -->
+            <div class="album-art">
+                <img id="album-cover" src="https://via.placeholder.com/300x300?text=Music" alt="Album Art">
+                <div class="album-overlay"></div>
+            </div>
+
+            <!-- Song Info -->
+            <div class="song-info">
+                <h2 id="song-title">Beautiful Song</h2>
+                <p id="song-artist">Artist Name</p>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="progress-container">
+                <span id="current-time">0:00</span>
+                <div class="progress-bar">
+                    <div id="progress" class="progress"></div>
+                    <input 
+                        type="range" 
+                        id="progress-input" 
+                        class="progress-input" 
+                        min="0" 
+                        max="100" 
+                        value="0"
+                    >
+                </div>
+                <span id="duration">0:00</span>
+            </div>
+
+            <!-- Controls -->
+            <div class="controls">
+                <button id="playlist-btn" class="control-btn" title="Playlist">
+                    <span>📋</span>
+                </button>
+                <button id="prev-btn" class="control-btn" title="Previous">
+                    <span>⏮</span>
+                </button>
+                <button id="play-btn" class="control-btn play-btn" title="Play">
+                    <span id="play-icon">▶</span>
+                </button>
+                <button id="next-btn" class="control-btn" title="Next">
+                    <span>⏭</span>
+                </button>
+                <button id="shuffle-btn" class="control-btn" title="Shuffle">
+                    <span>🔀</span>
+                </button>
+            </div>
+
+            <!-- Volume Control -->
+            <div class="volume-container">
+                <span class="volume-icon">🔊</span>
+                <input 
+                    type="range" 
+                    id="volume-slider" 
+                    class="volume-slider" 
+                    min="0" 
+                    max="100" 
+                    value="70"
+                >
+                <span id="volume-value">70%</span>
+            </div>
+
+            <!-- Autoplay Toggle -->
+            <div class="autoplay-container">
+                <label for="autoplay-toggle">
+                    <input type="checkbox" id="autoplay-toggle" checked>
+                    <span>Autoplay</span>
+                </label>
+            </div>
+
+            <!-- Hidden Audio Element -->
+            <audio id="audio-player"></audio>
+        </div>
+
+        <!-- Playlist Modal -->
+        <div id="playlist-modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Playlist</h2>
+                    <span class="close-modal">&times;</span>
+                </div>
+                <div id="playlist-items" class="playlist-items">
+                    <!-- Playlist items will be added here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="music-player.js"></script>
+</body>
+</html>

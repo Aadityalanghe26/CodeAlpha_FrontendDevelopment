@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+    <div class="gallery-container">
+        <h1>Image Gallery</h1>
+        
+        <!-- Filter Buttons -->
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="nature">Nature</button>
+            <button class="filter-btn" data-filter="city">City</button>
+            <button class="filter-btn" data-filter="animals">Animals</button>
+            <button class="filter-btn" data-filter="food">Food</button>
+            <button class="filter-btn" data-filter="travel">Travel</button>
+            <button class="filter-btn" data-filter="technology">Technology</button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid">
+            <!-- NATURE IMAGES -->
+            <div class="gallery-item" data-category="nature">
+                <img src="https://images.pexels.com/photos/1619317/pexels-photo-1619317.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Mountain">
+                <div class="overlay">
+                    <button class="view-btn">View</button>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="https://images.pexels.com/photos/2398220/pexels-photo-2398220.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Forest">
+                <div class="overlay">
+                    <button class="view-btn">View</button>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="https://images.pexels.com/photos/1207860/pexels-photo-1207860.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Ocean">
+                <div class="overlay">
+                    <button class="view-btn">View</button>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="https://images.pexels.com/photos/2541546/pexels-photo-2541546.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Waterfall">
+                <div class="overlay">
+                    <button class="view-btn">View</button>
+                </div>
+            </div>
+
+            <!-- CITY IMAGES -->
+            <div class="gallery-item" data-category="city">
+                <img src="https://images.pexels.com/photos/3783517/pexels-photo-3783517.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="City Lights">
+                <div class="overlay">
+                    <button class="view-btn">View</button>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="city">
+                <img src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Street">
+                <div class="overlay">
+                    <button class="view-btn">View</button>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="city">
+                <img src="https://images.pexels.com/photos/1170969/pexels-photo-1170969.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Architecture">
+                <div class="overlay">
+                    <button class="view-btn">View</button>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="city">
+                <img src="https://images.pexels.com/photos/3772557/pexels-photo-3772557.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Downtown">
+                <div class="overlay">
+                    <button class="view-btn">View</button>
+                </div>
+            </div>
+
+            <!-- ANIMALS IMAGES -->
+            <div class="gallery-item" data-category="animals">
+                <img src="https://images.pexels.com/photos/2317904/pexels-photo-2317904.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Lion">
+                <div class="overlay">
+                    <button class="view-btn">View</button>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="animals">
+                <img src="https://images.pexels.com/photos/349758/hummingbird-bird-birds-349758.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Hummingbird">
+                <div class="overlay">
+                    <button class="view-btn">View</button>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="animals">
+                <img src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Elephant">
+                <div class="overlay">
+                    <button class="view-btn">View</button>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="animals">
+                <img src="https://images.pexels.com/photos/1252500/pexels-photo-1252500.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Tiger">
+                <div class="overlay">
+                    <button class="view-btn">View</button>
+                </div>
+            </div>
+
+            <!-- FOOD IMAGES -->
+            <div class="gallery-item" data-category="food">
+                <img src="https://images.pexels.com/photos/1410235/pexels-photo-1410235.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Pizza">
+                <div class="overlay">
+                    <button class="view-btn">View</button>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="food">
+                <img src="https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Burger">
+                <div class="overlay">
+                    <button class="view-btn">View</button>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="food">
+                <img src="https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Sushi">
+                <div class="overlay">
+                    <button class="view-btn">View</button>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="food">
+                <img src="https://images.pexels.com/photos/1410235/pexels-photo-1410235.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Dessert">
+                <div class="overlay">
+                    <button class="view-btn">View</button>
+                </div>
+            </div>
+
+            <!-- TRAVEL IMAGES -->
+            <div class="gallery-item" data-category="travel">
+                <img src="https://images.pexels.com/photos/1619317/pexels-photo-1619317.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Beach">
+                <div class="overlay">
+                    <button class="view-btn">View</button>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="travel">
+                <img src="https://images.pexels.com/photos/1488317/pexels-photo-1488317.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Desert">
+                <div class="overlay">
+                    <button class="view-btn">View</button>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="travel">
+                <img src="https://images.pexels.com/photos/2398220/pexels-photo-2398220.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Temple">
+                <div class="overlay">
+                    <button class="view-btn">View</button>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="travel">
+                <img src="https://images.pexels.com/photos/1207860/pexels-photo-1207860.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Resort">
+                <div class="overlay">
+                    <button class="view-btn">View</button>
+                </div>
+            </div>
+
+            <!-- TECHNOLOGY IMAGES -->
+            <div class="gallery-item" data-category="technology">
+                <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Laptop">
+                <div class="overlay">
+                    <button class="view-btn">View</button>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="technology">
+                <img src="https://images.pexels.com/photos/788946/pexels-photo-788946.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Code">
+                <div class="overlay">
+                    <button class="view-btn">View</button>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="technology">
+                <img src="https://images.pexels.com/photos/1334597/pexels-photo-1334597.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Smartphone">
+                <div class="overlay">
+                    <button class="view-btn">View</button>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="technology">
+                <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Workspace">
+                <div class="overlay">
+                    <button class="view-btn">View</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <span class="close">&times;</span>
+            <button class="prev">❮</button>
+            <img id="lightbox-img" src="" alt="">
+            <button class="next">❯</button>
+            <p id="image-info"></p>
+        </div>
+    </div>
+
+    <script src="gallery.js"></script>
+</body>
+</html>
